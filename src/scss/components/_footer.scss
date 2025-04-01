@@ -1,0 +1,15 @@
+.footer {
+  padding: 60px 0;
+  background: var(--header-bg);
+
+  &__contacts-wrap {
+    margin-bottom: 32px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}

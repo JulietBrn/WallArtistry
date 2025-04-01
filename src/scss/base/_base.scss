@@ -1,0 +1,167 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@font-face {
+  // font-family: 'Prata';
+  // src: local('Prata');
+  // src: url(assets/font/Prata/Prata-Regular.ttf);
+}
+
+h1,
+h2,
+h3 {
+  // font-family: 'Prata', serif;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter");
+  src: url(assets/font/Inter/Inter-VariableFont_opsz,wght.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+
+  /* header */
+  --header-h: 50px;
+  --header-padding: 10px;
+  @media (min-width: $lg) {
+    --header-h: 70px;
+    --header-padding: 20px;
+  }
+}
+
+section:first-child {
+  padding-top: calc(var(--header-h) + 50px);
+  @media (min-width: $md) {
+    padding-top: calc(var(--header-h) + 60px);
+  }
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.container {
+  --container-padding: 20px;
+  max-width: calc(1060px + 3 * var(--container-padding));
+  padding: 0 var(--container-padding);
+  margin: auto;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+h1,
+.h1 {
+  font-size: 40px;
+  @media (min-width: $md) {
+    font-size: 64px;
+  }
+  line-height: 120%;
+  text-wrap: balance;
+  margin-bottom: 20px;
+}
+
+h2,
+.h2 {
+  font-size: 26px;
+  @media (min-width: $md) {
+    font-size: 48px;
+  }
+  line-height: 110%;
+  text-wrap: balance;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 12px;
+}
+
+p,
+a {
+  font-size: 16px;
+  @media (min-width: $md) {
+    font-size: 20px;
+  }
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+.mw-600 {
+  max-width: 600px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 24px;
+  @media (min-width: $md) {
+    font-size: 32px;
+  }
+
+  line-height: 120%;
+}
+
+.title-wrap {
+  margin-bottom: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}

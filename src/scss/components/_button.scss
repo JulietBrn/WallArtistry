@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  line-height: 1;
+  font-size: var(--btn-font-size);
+  border-radius: var(--btn-border-radius);
+  font-weight: 600;
+
+  padding: 24px 32px;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s;
+  }
+
+  &[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+}
+
+.button-secondary {
+  background-color: var(--text-secondary);
+}
