@@ -22,6 +22,7 @@ h1 {
     position: relative;
     line-height: 1;
     z-index: 3;
+    display: inline-block;
     &:after {
       content: "";
       display: block;
