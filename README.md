@@ -1,3 +1,3 @@
 # mst-starter
 
-New_v9\*[company]
+New_v9_WallArtistry

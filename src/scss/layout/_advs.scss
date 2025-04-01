@@ -1,0 +1,80 @@
+.adv-icon {
+  width: 54px;
+  margin-bottom: 10px;
+}
+
+.advs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 24px;
+}
+
+.adv-card {
+  width: 48%;
+  padding: 6px;
+
+  @media (min-width: $md) {
+    padding: 20px 12px;
+    width: 32%;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.team-card {
+  &__img-wrap {
+    aspect-ratio: 4/3;
+    margin-bottom: 10px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+.section {
+  overflow-x: hidden;
+}
+
+.gallery-item {
+  .ar-4-3 {
+    border: 1px solid var(--border-color);
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+}
+.imgs-wrap {
+  --duration: 60s;
+  --transition: -95%;
+  @media (min-width: $md) {
+    --duration: 40s;
+    --transition: -85%;
+  }
+  @media (min-width: $lg) {
+    --transition: -75%;
+  }
+  display: flex;
+  animation: moving var(--duration) linear infinite;
+  height: 400px;
+  width: max-content;
+}
+
+@keyframes moving {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(var(--transition));
+  }
+}
+
+.gallery-img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}

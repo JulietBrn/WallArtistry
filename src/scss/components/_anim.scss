@@ -1,15 +1,19 @@
-@keyframes fadeToRight {
+@keyframes fade {
   0% {
     opacity: 0;
-    transform: translateX(-60px);
+    filter: grayscale(100%);
+  }
+  30% {
+    opacity: 1;
+    filter: grayscale(100%);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0);
+    filter: grayscale(0%);
   }
 }
 
-.fade-to-right {
-  animation: fadeToRight 0.5s ease-out;
+.fade-grayscale {
+  animation: fade 1s ease-out;
 }

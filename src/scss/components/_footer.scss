@@ -12,4 +12,23 @@
 
     align-items: flex-start;
   }
+
+  .footer-link {
+    color: var(--white-color);
+    margin-bottom: 8px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--pink);
+    }
+  }
+
+  h3 {
+    color: rgb(255, 147, 147);
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
 }
